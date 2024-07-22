@@ -6,7 +6,7 @@ app.use(express.json());
 app.post("/", (req, res) => {
   const data = req.body;
   console.log("data", data);
-  const { userOp } = data.data;
+  const { userOp } = data;
   const { sender } = userOp
 
   if (sender === "0x47Bf99e56F29b29c5604EB0567144b2121cB891b") {
